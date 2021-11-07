@@ -53,7 +53,7 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 
 def logo():
 	os.system("clear")
-	print("""\033[1;97m  R A K A .X. M A N D A. \033[1;0m
+	print("""\033[1;97m  -- R A K A .X. M A N D A. \033[1;0m
 \033[1;97m--------------------------------------------------
 \033[1;93m➤\033[1;97m Author   : ☆ RAKA ☆ ™︻®╤───────═◍➤
 \033[1;93m➤\033[1;97m Github   : https://github.com/Bangsat-XD
