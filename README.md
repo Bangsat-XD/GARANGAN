@@ -25,4 +25,4 @@ SCRIPT PREMIUM RECOMEND 🤤💦
 
 ***cd GARANGAN***
 
-***python2 PRO-CRACK.py
+***python2 Goblog.py***
