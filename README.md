@@ -26,3 +26,7 @@ SCRIPT PREMIUM RECOMEND 🤤💦
 ***cd GARANGAN***
 
 ***python2 RAKA.py***
+
+# SCREEN SHOT
+
+![20211107_092811](https://user-images.githubusercontent.com/93072215/140630056-f735c0c3-0ff6-40c8-8188-7ba8a1f68190.png)
