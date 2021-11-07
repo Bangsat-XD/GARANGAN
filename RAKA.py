@@ -104,8 +104,8 @@ def menu():
 	print("\033[1;97m[2]\033[1;91m-⋄-\033[1;97m Crack from public followers")
 	print("\033[1;97m[3]\033[1;91m-⋄-\033[1;97m Multi cracking from public Id\033[1;93m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;97m[4]\033[1;91m-⋄-\033[1;97m Check crack results")
-	print("\033[1;97m[5]\033[1;91m-⋄-\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPRO \033[1;97m]")
-	print("\033[1;97m[6]\033[1;91m-⋄-\033[1;97m Exit\033[1;97m [ \033[1;91mremove-token \033[1;97m]")
+	print("\033[1;97m[5]\033[1;91m-⋄-\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;97m[6]\033[1;91m-⋄-\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]")
 	
 	Bilal = raw_input("\033[1;97m[+]\033[1;91m-⋄-\033[1;97m Option : ")
 	if Bilal =="":
@@ -230,28 +230,28 @@ def massal():
 
 def method():
 	print("\033[1;93m➤\033[1;97m Choose crack methode [recommended B-API]")
-	print("\033[1;97m[1]\033[1;91m-⋄-\033[1;97mB-API\033[1;97m [ \033[1;95mFaster \033[1;97m]")
+	print("\033[1;97m[1]\033[1;91m-⋄-\033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;97m[2]\033[1;91m-⋄-\033[1;97mM-basic\033[1;93m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;97m[3]\033[1;91m-⋄-\033[1;97mFree facebook\033[1;93m [ \033[1;95m normal\033[1;97m]")
+	print("\033[1;97m[3]\033[1;91m-⋄-\033[1;97mFree facebook\033[1;93m [ \033[1;95mNormal \033[1;97m]")
 	method = raw_input("\033[1;93m➤\033[1;97m Option : ")
 	if method == "":
 		menu()
 	elif method == "1":
-		ask = raw_input("\033[1;93m➤\033[1;97mDo you choose manual passwors ? y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] : ")
+		ask = raw_input("\033[1;93m➤\033[1;97m Do you choose manual passwors ? y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] : ")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(bapi, id)
 		exit("Program End")
 	elif method == "2":
-		ask = raw_input("\033[1;93m➤\033[1;97mDo you choose manual passwords  y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] ")
+		ask = raw_input("\033[1;93m➤\033[1;97m Do you choose manual passwords  y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] ")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mbasic, id)
 		exit("Program End")
 	elif method == "3":
-		ask = raw_input("\033[1;96m[\033[1;94m!\033[1;97m]Do you choose manual passwords y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] ")
+		ask = raw_input("\033[1;96m[\033[1;94m!\033[1;97m] Do you choose manual passwords y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] ")
 		if ask == "y":
 			manual()
 		print(" ")
