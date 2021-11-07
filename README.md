@@ -25,4 +25,4 @@ SCRIPT PREMIUM RECOMEND 🤤💦
 
 ***cd GARANGAN***
 
-***python2 Goblog.py***
+***python2 RAKA.py***
