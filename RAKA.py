@@ -58,6 +58,7 @@ def logo():
 \033[1;93m➤\033[1;97m Author   : ☆ RAKA ☆ ™︻®╤───────═◍➤
 \033[1;93m➤\033[1;97m Github   : https://github.com/Bangsat-XD
 \033[1;93m➤\033[1;97m Twitter  : Bangsat_XD
+\033[1;93m➤\033[1;97m Youtube  : Bangsat-XD
 \033[1;97m--------------------------------------------------""")
 def login():
 	os.system("clear")
