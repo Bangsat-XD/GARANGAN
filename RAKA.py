@@ -53,7 +53,7 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 
 def logo():
 	os.system("clear")
-	print("""\033[1;97m  L E G E N D -- R A K A .XXX. A M A N D A. \033[1;0m
+	print("""\033[1;97m  ™︻®╤──────═•● R A K A .💦. A M A N D A ●•═──────╤®︻™ \033[1;0m
 \033[1;97m--------------------------------------------------
 \033[1;93m➤\033[1;97m Author   : ☆ RAKA ☆ ™︻®╤───────═◍➤
 \033[1;93m➤\033[1;97m Github   : https://github.com/Bangsat-XD
@@ -189,7 +189,7 @@ def publik():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;93m➤\033[1;97m Account friend list is not public")
-	print("\\033[1;93m➤\033[1;97m  Total id  : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print("\\033[1;93m➤\033[1;97m Total id  : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
 	global token
