@@ -56,10 +56,10 @@ def logo():
 	os.system("clear")
 	print("""\033[1;97m \033[1;92m™︻®╤──────═•● R A K A .💦. A M A N D A ●•═──────╤®︻™ \033[1;97m \033[1;0m
 \033[1;97m--------------------------------------------------
-\033[1;93m➤\033[1;97m Author   : ☆ RAKA ☆ ™︻®╤───────═◍➤
-\033[1;93m➤\033[1;97m Github   : https://github.com/Bangsat-XD
-\033[1;93m➤\033[1;97m Twitter  : Bangsat_XD
-\033[1;93m➤\033[1;97m Youtube  : Bangsat-XD
+\033[1;93m➤\033[1;97m Author   : \033[1;92m☆ RAKA ☆ ™︻®╤───────═◍➤ \033[1;97m
+\033[1;93m➤\033[1;97m Github   : \033[1;92mhttps://github.com/Bangsat-XD \033[1;97m
+\033[1;93m➤\033[1;97m Twitter  : \033[1;92mBangsat_XD \033[1;97m
+\033[1;93m➤\033[1;97m Youtube  : \033[1;92mBangsat-XD \033[1;97m
 \033[1;97m--------------------------------------------------""")
 def login():
 	os.system("clear")
@@ -104,7 +104,7 @@ def menu():
 	
 	print("\033[1;97m[1]\033[1;91m-⋄-\033[1;97m Clone from public friends")
 	print("\033[1;97m[2]\033[1;91m-⋄-\033[1;97m Crack from public followers")
-	print("\033[1;97m[3]\033[1;91m-⋄-\033[1;97m Multi cracking from public Id\033[1;93m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;97m[3]\033[1;91m-⋄-\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;97m[4]\033[1;91m-⋄-\033[1;97m Check crack results")
 	print("\033[1;97m[5]\033[1;91m-⋄-\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;97m[6]\033[1;91m-⋄-\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]")
