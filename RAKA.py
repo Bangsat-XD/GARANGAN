@@ -52,17 +52,30 @@ tgl = ("%s %s %s"%(ha, op, ta))
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
              
-def logo():
-	os.system("clear")
-	print("""\033[1;97m \033[1;92m™︻®╤──────═•● R A K A .💦. A M A N D A ●•═──────╤®︻™ \033[1;97m \033[1;0m
-\033[1;97m--------------------------------------------------
-\033[1;93m➤\033[1;97m Author   : \033[1;92m☆ RAKA ☆ ™︻®╤───────═◍➤ \033[1;97m
-\033[1;93m➤\033[1;97m Github   : \033[1;92mhttps://github.com/Bangsat-XD \033[1;97m
-\033[1;93m➤\033[1;97m Twitter  : \033[1;92mBangsat_XD \033[1;97m
-\033[1;93m➤\033[1;97m Youtube  : \033[1;92mBangsat-XD \033[1;97m
-\033[1;97m--------------------------------------------------""")
-def login():
-	os.system("clear")
+logo = """ \033[1;91m                   
+                   `/ymMMMMMMMMmy/`
+               `/ymMMMMMMMMMMMMMMmy/`
+              /hMMMMMMMMMMMMMMMMMMMMMMh/
+            /mMMmNMMMMMNNNNNNNNMMMMMNNMMm/
+          `hNmo:dMMNNNmNNmNNmNNmNNNMMd:omNh`
+         .mh:+/hMNNNNmNNmNdhmmNNmNNNNMy/o:hm.
+        `d+://sNmMMMmMMMmdy+/mMMMmMMMmNs///+d`
+        ys.o/oMmNNNmNNMNNMmdMNNMNNmNNNmMo/o.ys
+       `my.-/NmMMMMmMMNmNNyyNNmNMMmMMMMmN/:`ym`
+       -h/+s/MmMMMNmNNNdym++mymNNNmNMMNmM:so/h-
+       -N.o.sMmMMMNh/:-`-MosM-`-:/hNMMMmMs.+.N-
+\033[1;97m       `ho/-ohmMMMM/    -M/+M.    /MMMMmho-/oh
+        s+-s-odmNNN`     /-:/     .NNNmd+:s-+s
+        `mo/-:+ymMm                mMms+:-/om`
+         .h/+/y`hhs                yyh`y/+/h.
+          `hd/::-+.                .+-::/dy`
+            /hs+/::.--          --.::/+sh:
+              :hds+/-`          `-/+sdh:
+                `/ymM+          oMmy:\033[1;97m
+         [\033[41;1m ☆ Raka ☆ ™︻®╤───────═◍➤ \033[00;1m]
+"""
+os.system('clear')
+print (logo)
 	try:
 		#-> connection test
 		requests.get("https://mbasic.facebook.com")
