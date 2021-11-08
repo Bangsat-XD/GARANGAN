@@ -55,7 +55,7 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 def logo():
 	os.system("clear")
 	print("""\033[1;97m 
-            \033[1;91m`/ymMMMMMMMMmy/`
+                    \033[1;91m`/ymMMMMMMMMmy/`
                     `/ymMMMMMMMMMMMMMMmy/`
                   /hMMMMMMMMMMMMMMMMMMMMMMh/
                 /mMMmNMMMMMNNNNNNNNMMMMMNNMMm/
