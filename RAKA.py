@@ -74,9 +74,6 @@ logo = """ \033[1;91m
                 `/ymM+          oMmy:\033[1;97m
          [\033[41;1m ☆ Raka ☆ ™︻®╤───────═◍➤ \033[00;1m]
 """
-os.system('clear')
-print (logo)
-
 	try:
 		#-> connection test
 		requests.get("https://mbasic.facebook.com")
