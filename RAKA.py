@@ -66,7 +66,7 @@ def logo():
             `my.-/NmMMMMmMMNmNNyyNNmNMMmMMMMmN/:`ym`
             -h/+s/MmMMMNmNNNdym++mymNNNmNMMNmM:so/h-
             -N.o.sMmMMMNh/:-`-MosM-`-:/hNMMMmMs.+.N-
-\033[1;97m       `ho/-ohmMMMM/    -M/+M.    /MMMMmho-/oh
+\033[1;97m            `ho/-ohmMMMM/    -M/+M.    /MMMMmho-/oh
              s+-s-odmNNN`     /-:/     .NNNmd+:s-+s
              `mo/-:+ymMm                mMms+:-/om`
               .h/+/y`hhs                yyh`y/+/h.
@@ -74,7 +74,7 @@ def logo():
                  /hs+/::.--          --.::/+sh:
                    :hds+/-`          `-/+sdh:
                      `/ymM+          oMmy:                                                         
-™︻®╤──────═•● [\033[41;1m R A K A .♡. A M A N D A \033[00;1m] ●•═──────╤®︻™ 
+™︻®╤──────═•● [\033[41;1m R A K A .💦. A M A N D A \033[00;1m] ●•═──────╤®︻™ 
 \033[1;97m--------------------------------------------------
 \033[1;93m➤\033[1;97m Author   : \033[1;92m☆ RAKA ☆ ™︻®╤───────═◍➤ \033[1;97m
 \033[1;93m➤\033[1;97m Github   : \033[1;92mhttps://github.com/Bangsat-XD \033[1;97m
