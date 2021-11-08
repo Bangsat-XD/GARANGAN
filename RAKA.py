@@ -55,7 +55,7 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 def logo():
 	os.system("clear")
 	print("""\033[1;97m 
-                       `/ymMMMMMMMMmy/`
+            \033[1;91m`/ymMMMMMMMMmy/`
                     `/ymMMMMMMMMMMMMMMmy/`
                   /hMMMMMMMMMMMMMMMMMMMMMMh/
                 /mMMmNMMMMMNNNNNNNNMMMMMNNMMm/
@@ -65,7 +65,7 @@ def logo():
             ys.o/oMmNNNmNNMNNMmdMNNMNNmNNNmMo/o.ys
            `my.-/NmMMMMmMMNmNNyyNNmNMMmMMMMmN/:`ym`
            -h/+s/MmMMMNmNNNdym++mymNNNmNMMNmM:so/h-
-           -N.o.sMmMMMNh/:-`-MosM-`-:/hNMMMmMs.+.N-
+           -N.o.sMmMMMNh/:-`-MosM-`-:/hNMMMmMs.+.N- \033[1;97m
            `ho/-ohmMMMM/    -M/+M.    /MMMMmho-/oh
             s+-s-odmNNN`     /-:/     .NNNmd+:s-+s
             `mo/-:+ymMm                mMms+:-/om`
