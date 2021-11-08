@@ -66,7 +66,7 @@ def logo():
            `my.-/NmMMMMmMMNmNNyyNNmNMMmMMMMmN/:`ym`
            -h/+s/MmMMMNmNNNdym++mymNNNmNMMNmM:so/h-
            -N.o.sMmMMMNh/:-`-MosM-`-:/hNMMMmMs.+.N- \033[1;97m 
- \033[1;92m`ho/-ohmMMMM/    -M/+M.    /MMMMmho-/oh
+           \033[1;92m`ho/-ohmMMMM/    -M/+M.    /MMMMmho-/oh
             s+-s-odmNNN`     /-:/     .NNNmd+:s-+s
             `mo/-:+ymMm                mMms+:-/om`
              .h/+/y`hhs                yyh`y/+/h.
