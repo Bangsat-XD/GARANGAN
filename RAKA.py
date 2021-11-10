@@ -191,7 +191,7 @@ def menu():
 			print("\033[0;96m # ----------------------------------------------")
 			exit(" ")
 		else:
-
+		 menu()
 def publik():
 	global token
 	try:
