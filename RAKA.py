@@ -248,7 +248,7 @@ def massal():
 	print("\033[1;93m➤\033[1;97m Total id  : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
-	print("\033[1;93m➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;92m]")
+	print("\033[1;93m➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
 	print("\033[1;97m[1]\033[1;91m-●- \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;97m[2]\033[1;91m-●- \033[1;97mM-basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;97m[3]\033[1;91m-●- \033[1;97mFree facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
