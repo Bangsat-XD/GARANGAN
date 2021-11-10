@@ -190,7 +190,6 @@ def menu():
 			os.system("cat CP/%s"%(file))
 			print("\033[0;96m # ----------------------------------------------")
 			exit(" ")
-		else:
 def publik():
 	global token
 	try:
