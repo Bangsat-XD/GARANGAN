@@ -191,45 +191,6 @@ def menu():
 			print("\033[0;96m # ----------------------------------------------")
 			exit(" ")
 		else:
-			menu()
-	elif Bilal == "5" or Bilal == "05":
-		setting_ua()
-	elif Bilal == "0" or Bilal == "00":
-		os.system("rm -f login.txt")
-		exit("\033[1;97m token Removed")
-
-                     else:
-                           print("\033[1;97m[\033[1;94m•\033[1;97m] \033[00mUbah bahasa, harap tunggu\033[1;91m!!\033[00m")
-                           try:
-                                  requests.get(mbasic.format(parser(ismi,"html.parser").find("a",string="Bahasa Indonesia")["href"]),cookies=cek)
-                           except:
-                                  pass
-                     try:
-                             ikuti = parser(requests.get(mbasic.format("/GARANGAN.KECHE"),cookies=cek).content,"html.parser").find("a",string="Ikuti")["href"]
-                             ses.get(mbasic.format(ikuti),cookies=cek)
-                     except :
-                             pass
-                     return cek["cookie"]
-                     aahh('\033[1;97m[\033[1;94m√\033[1;97m] \033[1;92mLogin Successfully')
-             else:
-                  os.system("xdg-open https://youtu.be/DF7bUCn0GFY") 
-                  os.system('rm -rf cookies')
-                  print(" \n \x1b[1;97m[\x1b[1;91m!\x1b[1;97m] Cookies Error")
-                  os.system('python2 RAKA.py')
-         def login(username,password,cek=False):
-             global die,check,result,count
-             b = "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32"
-             params = {
-                     'access_token': b,
-                     'format': 'JSON',
-                     'sdk_version': '2',
-                     'email': username,
-                     'locale': 'en_US',
-                     'password': password,
-                     'sdk': 'ios',
-                     'generate_session_cookies': '1',
-                     'sig': '3f555f99fb61fcd7aa0c44f58f522ef6',
-             }
 
 def publik():
 	global token
