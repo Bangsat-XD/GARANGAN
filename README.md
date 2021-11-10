@@ -29,4 +29,4 @@ SCRIPT PREMIUM RECOMEND 🤤💦
 
 # SCREEN SHOT
 
-![20211107_092811](https://user-images.githubusercontent.com/93072215/140630056-f735c0c3-0ff6-40c8-8188-7ba8a1f68190.png)
+![20211110_173502](https://user-images.githubusercontent.com/93072215/141098145-c0c07156-39d7-4453-90f4-7fbacae25561.png)
