@@ -1,5 +1,6 @@
 # -*- coding: utf-8
 # author by ☆ RAKA ☆ ™︻®╤───────═◍➤
+# JANGAN DI UBAH LAGI ANJING SCRIPT UDAH ENAK ...
 import os
 try:
 	import requests
