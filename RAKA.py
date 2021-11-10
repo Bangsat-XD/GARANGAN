@@ -189,7 +189,7 @@ def publik():
 		token = open("login.txt", "r").read()
 	except IOError:
 		exit("\n\033[1;96m[\033[1;93m!\033[1;96m] Token Error")
-	idt = raw_input("\033[1;93m➤\033[1;97m Target Id   : ")
+	idt = raw_input("\033[1;93m➤\033[1;97m Target Id      : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
@@ -197,7 +197,7 @@ def publik():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;93m➤\033[1;97m Account friend list is not public")
-	print("\033[1;93m➤\033[1;97m Total Id    : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print("\033[1;93m➤\033[1;97m Total Id       : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
 	global token
@@ -241,7 +241,7 @@ def method():
 	print("\033[1;97m[1]\033[1;92m─ ® ─ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;97m[2]\033[1;92m─ ® ─ \033[1;97mM-basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;97m[3]\033[1;92m─ ® ─ \033[1;97mFree facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
-	method = raw_input("[+]\033[1;92m─ ® ─ \033[1;97mOption : ")
+	method = raw_input("[+]\033[1;92m─ ® ─ \033[1;97mOption    : ")
 	if method == "":
 		menu()
 	elif method == "1":
