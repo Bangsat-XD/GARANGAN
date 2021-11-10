@@ -126,15 +126,15 @@ def menu():
 		exit(" ! no internet connection")
 	logo()
 	
-	print("\033[1;97m[1]\033[1;91m-●-\033[1;97m Clone from public friends")
-	print("\033[1;97m[2]\033[1;91m-●-\033[1;97m Crack from public followers")
-	print("\033[1;97m[3]\033[1;91m-●-\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;97m[4]\033[1;91m-●-\033[1;97m Check crack results")
-	print("\033[1;97m[5]\033[1;91m-●-\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;97m[6]\033[1;91m-●-\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]")
+	print("\033[1;97m[1]\033[1;91m─®─\033[1;97m Clone from public friends")
+	print("\033[1;97m[2]\033[1;91m─®─\033[1;97m Crack from public followers")
+	print("\033[1;97m[3]\033[1;91m─®─\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;97m[4]\033[1;91m─®─\033[1;97m Check crack results")
+	print("\033[1;97m[5]\033[1;91m─®─\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;97m[6]\033[1;91m─®─\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]")
 	print("\033[1;97m--------------------------------------------------")
 	
-	Bilal = raw_input("\033[1;97m[+]\033[1;91m-●-\033[1;97m Option : ")
+	Bilal = raw_input("\033[1;97m[+]\033[1;91m─®─\033[1;97m Option : ")
 	if Bilal =="":
 		menu()
 	elif Bilal == "1" or Bilal == "01":
@@ -148,10 +148,10 @@ def menu():
 		method()
 	elif Bilal == "4" or Bilal == "04":
 		print(" ")
-		print("\033[1;97m[1]\033[1;91m-●-\033[1;97m Check results OK")
-		print("\033[1;97m[2]\033[1;91m-●-\033[1;97m Check results CP")
+		print("\033[1;97m[1]\033[1;91m─®─\033[1;97m Check results OK")
+		print("\033[1;97m[2]\033[1;91m─®─\033[1;97m Check results CP")
 		print(" ")
-		cek = raw_input("\033[1;97m[+]\033[1;91m-●-\033[1;97m Option : ")
+		cek = raw_input("\033[1;97m[+]\033[1;91m─®─\033[1;97m Option : ")
 		if cek =="":
 			menu()
 		elif cek == "1":
@@ -249,10 +249,10 @@ def massal():
 
 def method():
 	print("\033[1;93m➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
-	print("\033[1;97m[1]\033[1;91m-●- \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;97m[2]\033[1;91m-●- \033[1;97mM-basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;97m[3]\033[1;91m-●- \033[1;97mFree facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
-	method = raw_input("\033[1;93m➤\033[1;97m Option : ")
+	print("\033[1;97m[1]\033[1;91m─®─ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
+	print("\033[1;97m[2]\033[1;91m─®─ \033[1;97mM-basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
+	print("\033[1;97m[3]\033[1;91m─®─ \033[1;97mFree facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
+	print("\033[1;97m[3]\033[1;91m─®─ \033[1;97m Option      : ")
 	if method == "":
 		menu()
 	elif method == "1":
