@@ -137,8 +137,8 @@ def menu():
 		method()
 	elif Bilal == "4" or Bilal == "04":
 		print(" ")
-		print("\033[1;97m[1]\033[1;92m─ ® ─\033[1;97m Check results OK")
-		print("\033[1;97m[2]\033[1;92m─ ® ─\033[1;97m Check results CP")
+		print("\033[1;97m[1]\033[1;92m─ ® ─\033[1;97m Check results RAKA_AMANDA OK")
+		print("\033[1;97m[2]\033[1;92m─ ® ─\033[1;97m Check results RAKA_AMANDA CP")
 		print(" ")
 		cek = raw_input("\033[1;97m[+]\033[1;92m─ ® ─\033[1;97m Option : ")
 		if cek =="":
@@ -291,7 +291,7 @@ def bapi(user):
 		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;93m➤\033[1;97m Cracking\033[1;91m]\033[1;92m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;93m\033[1;92mCrack \033[1;91m]\033[1;92m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -332,7 +332,7 @@ def mbasic(user):
 		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[0;91m[\033[0;92mCracking\033[0;92m]\033[0;93m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+		"\r\033[0;91m[\033[0;92mCrack \033[0;92m]\033[0;93m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -384,7 +384,7 @@ def mobile(user):
 		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[0;91m[\033[0;92mCracking\033[0;93m]\033[0;95m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+		"\r\033[0;91m[\033[0;92mCrack \033[0;93m]\033[0;95m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -444,7 +444,7 @@ def manual():
 	def main(user):
 		global loop, token
 		sys.stdout.write(
-			"\r\033[0;92m[\033[0;96mCracking\033[0;92m]\033[0;96m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+			"\r\033[0;92m[\033[0;96mCrack \033[0;92m]\033[0;96m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
 		); sys.stdout.flush()
 		uid, name = user.split("<=>")
 		try:
