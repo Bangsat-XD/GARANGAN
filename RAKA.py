@@ -229,7 +229,7 @@ def massal():
 		try:
 			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 				uid = i["id"]
-				nama = i["name"].rsplit(" ")[0]
+				nama = n["name"].rsplit(" ")[0]
 				id.append(uid+"<=>"+nama)
 		except KeyError:
 			print("\033[1;93m➤\033[1;97m  Ids friend list Is not public")
