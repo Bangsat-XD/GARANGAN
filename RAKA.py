@@ -114,10 +114,6 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
 	logo()
-	print (( m + " \n [" + p + " Selamat Datang Pengguna \033 [1;32m" + nama + m + " ]" + p ))
-        print (( p + " [" + k + "•" + m + "•" + p + "]" + p + " ID Anda : \033 [1;32m" + id ))
-        print (( p + " [" + k + "•" + m + "•" + p + "]" + p + " TTL Anda : \033 [1;32m" + ttl ))
-        print (( p + " [" + k + "•" + m + "•" + p + "]" + p + " Anda Bergabung : \033 [1;32m" + durasi ))
 	print("\033[1;97m[1]\033[1;92m─ ® ─\033[1;97m Clone from public friends")
 	print("\033[1;97m[2]\033[1;92m─ ® ─\033[1;97m Crack from public followers")
 	print("\033[1;97m[3]\033[1;92m─ ® ─\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
