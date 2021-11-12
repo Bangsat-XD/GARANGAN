@@ -1,4 +1,4 @@
-{@`\`@ z@ `
+{
 %{@ @ @Ax@ @Ax@I ?GAGAGAGAGAGAGA
 %{@ @ @ @ @ @ @ @ @KKK
 %{@ @ @ @ @ @ @ @ @ooo
