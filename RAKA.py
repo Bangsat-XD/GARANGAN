@@ -123,32 +123,7 @@ def menu():
 		exit("\033[1;96m[\033[1;93m+\033[1;96m] Token Error")
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
-def menu():
-  try:
-    toket = open('login.txt','r').read()
-    otw = requests.get('https://graph.facebook.com/me/?access_token='+toket)
-    a = json.loads(otw.text)
-    nm = a['name']
-    id = a['id']
-    tl = a['birthday']
-  except Exception as e:
-    print('[x] Token Invalid')
-    time.sleep(3)
-    login()
-  except KeyError:
-    print('[x] Token Invalid')
-    time.sleep(3)
-    os.system('rm -rf login.txt')
-    login()
-  except requests.exceptions.ConnectionError:
-    exit('[x] Koneksi Error')
-  os.system("clear")
-    print logo
-        print('==========================================')
-        print('[•] Nama : '+nm)
-        print('[•] Your ID : '+id)
-        print('[•] Birthday : '+tl)
-        print('==========================================')
+	logo()
 	print("\033[1;97m[1]\033[1;92m─ ® ─\033[1;97m Clone from public friends")
 	print("\033[1;97m[2]\033[1;92m─ ® ─\033[1;97m Crack from public followers")
 	print("\033[1;97m[3]\033[1;92m─ ® ─\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
