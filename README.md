@@ -25,7 +25,7 @@ SCRIPT PREMIUM RECOMEND 🤤💦
 
 ***cd GARANGAN***
 
-***python2 RAKA.py***
+***python2 manda.py***
 
 # SCREEN SHOT
 
