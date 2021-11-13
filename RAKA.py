@@ -309,8 +309,6 @@ def bapi(user):
 		pwx = [ name+"3", name+"1234", name+"12345" ]
 	elif len(name)<=3:
 		pwx = [ name+"2", name+"12", name+"123" ]
-	elif len(name)<=4:
-		pwx = [ sayang+"2", sayang+"12", sayang+"123", anjing+"2",anjing+"123", 786786, bismillah+"2", bismillah+"123" ]
 	else:
 		pwx = [ name+"123", name+"1234", name+"12345" ]
 	try:
