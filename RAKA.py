@@ -203,7 +203,7 @@ def publik():
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
 			nama = i["name"].rsplit(" ")[0]
-			id.append(uid+"<=>"+nama)
+			id.append(uid+"<=>"%(len(+nama)))
 	except KeyError:
 		exit("\033[1;93m➤\033[1;97m Account friend list is not public")
 	print("\033[1;93m➤\033[1;97m Total Id      : \033[0;91m%s\033[0;97m"%(len(id))) 
