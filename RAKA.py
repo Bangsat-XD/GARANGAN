@@ -53,9 +53,18 @@ tBilall = ("%s-%s-%s-%s"%(hr, ha, op, ta))
 tgl = ("%s %s %s"%(ha, op, ta))
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
-             
-def logo():
-	os.system("clear")
+
+def croot():
+    os.system("git pull")
+def ikeh_ikeh_kimochi():
+    os.system("clear")
+def aahh(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(1./300)
+def kontol():
+    time.sleep(0.3)             
 	print("""\033[1;97m 
                   \033[1;91m───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
                   ───█▒▒░░░░░░░░░▒▒█───
