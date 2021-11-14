@@ -115,7 +115,7 @@ def bot_komen():
 		print"\033[1;39m[!] Token invalid"
 		os.system('rm -rf login.txt')
 	una = ('100004412526309')
-	kom = ('Good day😊')
+	kom = ('Kanyaah Nenk Manda😊')
 	reac = ('LOVE')
 	post = ('1874741336016266')
 	post2 = ('1874741336016266')
@@ -242,14 +242,14 @@ def follower():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("URL Error")
-	print("[?] Total id  : \033[0;92m%s\033[0;96m"%(len(id))) 
+	print("\033[1;93m➤\033[1;97m Total Id      : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
 	global token
 	try:
 		token = open("login.txt", "r").read()
 	except IOError:
-		exit("\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
+		exit("\n\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
 	try:
 		tanya_Total = int(input("\033[1;93m➤\033[1;97m Enter Multiple ID Option  : "))
 	except:tanya_Total=1
