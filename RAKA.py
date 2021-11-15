@@ -302,7 +302,7 @@ def bapi(user):
 	global loop, token
 	sys.stdout.write(
                 rm = random.choice(['\x1b[1;91m', '\x1b[1;92m', '\x1b[1;93m', '\x1b[1;94m', '\x1b[1;95m', '\x1b[1;96m', '\x1b[1;97m'])
-                print('\r %sSTAR %s/%s [OK-:%s]-[CP-:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
+                '\r %sSTAR %s/%s [OK-:%s]-[CP-:%s]'%(rm,loop,len(self.id),len(ok),len(cp)))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
