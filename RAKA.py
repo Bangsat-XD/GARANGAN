@@ -1,11 +1,10 @@
 # -*- coding: utf-8
-__________________________________________________
 # Author by : ☆ RAKA ☆ ™︻®╤───────═◍➤
 # Github    : Bangsat-XD
 # Facebook  : Raka Andrian Tara
 # Instagram : raka_andrian27
 # Twitter   : Bangsat_XD
-__________________________________________________
+# NOTE !!!
 # JANGAN DI UBAH LAGI ANJING SCRIPT UDAH ENAK ...
 # Meskipun Mau di Ubah IZIN DULU YA CUK ???
 import os
