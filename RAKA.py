@@ -301,7 +301,7 @@ def bapi(user):
                 ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[0;92m[\033[0;92mProcess \033[0;93m]\033[0;95m %s/%s •••> OK:-%s ••• CP:-%s "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;93m➤\033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •••> OK:-%s ••• CP:-%s "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
