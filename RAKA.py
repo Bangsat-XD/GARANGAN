@@ -544,5 +544,5 @@ def buat_folder():
 if __name__ == "__main__":
 	os.system("git pull")
 	os.system("touch login.txt")
-	raka_andrian()
+	buat_folder()
 	login()
