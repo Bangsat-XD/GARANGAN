@@ -102,11 +102,6 @@ def login():
 			print("Wrong Input")
 		try:
 			nama = requests.get("https://graph.facebook.com/me?access_token="+token).json()["name"].lower()
-			open("login.txt", "w").write(token)
-
-### RAKA ANDRIAN ###
-def  raka_bangsatxd ():
-	coba :
 		token = open ( "login.txt" , "r" ). baca ()
 	kecuali  IOError :
 		print "\33[1;97m[!] Token tidak valid"
