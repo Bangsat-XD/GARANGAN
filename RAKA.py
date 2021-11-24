@@ -129,10 +129,6 @@ def menu():
 		exit("\033[1;96m[\033[1;93m+\033[1;96m] Token Error")
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
-        print logo
-        print"[+] Bergabung : \033[0;97m" +durasi 
-        print""+p+"[+] IP Anda : "+p+"" +ip 
-        print"[ Hello \033[1;92m"+nama+"\033[0;97m ]" 
 
 # Logo (LO GADA OTAK)
 	logo()
