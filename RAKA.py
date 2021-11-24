@@ -86,7 +86,7 @@ def logo():
 \033[1;93m➤\033[1;97m Instagram  : \033[1;92mraka_andrian27 \033[1;97m
 \033[1;93m➤\033[1;97m Twitter    : \033[1;92mBangsat_XD \033[1;97m
 
-    \033[1;95m──────═• \033[1;92m● \033[1;97m \033[41;1m[ R A K A .💚. A M A N D A ]\033[00;1m  \033[1;92m● \033[1;97m\033[1;95m•═──────""")
+    \033[1;95m──────═• \033[1;92m● \033[1;97m \033[41;1m[ A M A N D A .💦. R A K A ]\033[00;1m  \033[1;92m● \033[1;97m\033[1;95m•═──────""")
 
 
 def login():
@@ -100,7 +100,7 @@ def login():
 		token = open("login.txt", "r")
 		menu()
 	except KeyError, IOError:
-		token = raw_input("\033[1;93m➤ \033[1;97mEnter Token : ")
+		token = raw_input("\033[1;93m➤ \033[1;95mEnter Token : ")
 		if token == "":
 			print("Wrong Input")
 		try:
