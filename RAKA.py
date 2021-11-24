@@ -84,7 +84,8 @@ def logo():
 \033[1;93m➤\033[1;97m Github     : \033[1;92mhttps://github.com/Bangsat-XD \033[1;97m
 \033[1;93m➤\033[1;97m Facebook   : \033[1;92mRaka Andrian Tara \033[1;97m
 \033[1;93m➤\033[1;97m Instagram  : \033[1;92mraka_andrian27 \033[1;97m
-\033[1;93m➤\033[1;97m Twitter    : \033[1;92mBangsat_XD \033[1;97m    """)
+\033[1;93m➤\033[1;97m Twitter    : \033[1;92mBangsat_XD \033[1;97m
+    \033[1;95m──────═• \033[1;92m●                          \033[1;92m● \033[1;97m\033[1;95m•═──────     """)
 
 
 def login():
