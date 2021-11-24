@@ -129,9 +129,7 @@ def menu():
 		exit("\033[1;96m[\033[1;93m+\033[1;96m] Token Error")
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
-
 # Logo (LO GADA OTAK)
-
 	logo()
 	print("\033[1;97m[1]\033[1;92m─ ® ─\033[1;97m Clone from public friends")
 	print("\033[1;97m[2]\033[1;92m─ ® ─\033[1;97m Crack from public followers")
