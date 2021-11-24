@@ -129,14 +129,15 @@ def menu():
 		exit("\033[1;96m[\033[1;93m+\033[1;96m] Token Error")
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
-# Logo (LO GADA OTAK)
-	logo()
+        print logo
         print""+p+"" 
         print"[+] Bergabung : \033[0;97m" +durasi 
         print""+p+"[+] IP Anda : "+p+"" +ip 
         print""+p+"" 
         print"[ Hello \033[1;92m"+nama+"\033[0;97m ]" 
         print""+p+""
+# Logo (LO GADA OTAK)
+	logo()
 	print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m─ ® ─\033[1;97m Clone from public friends")
 	print("\033[1;96m[\033[1;93m2\033[1;96m]\033[1;92m─ ® ─\033[1;97m Crack from public followers")
 	print("\033[1;96m[\033[1;93m3\033[1;96m]\033[1;92m─ ® ─\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
