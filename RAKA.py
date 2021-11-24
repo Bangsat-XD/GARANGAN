@@ -86,7 +86,6 @@ def logo():
 \033[1;93m➤\033[1;97m Twitter    : \033[1;92mBangsat_XD \033[1;97m
     \033[1;95m──────═• \033[1;92m● \033[1;95m══════════════════════════════ \033[1;92m● \033[1;97m\033[1;95m•═──────     """)
 
-
 def login():
 	os.system("clear")
 	try:
@@ -113,12 +112,7 @@ def login():
 		except KeyError:
 			os.system("rm -f login.txt")
 			exit("[?] Login Error")
-
-
-
 # Menu Raka Andrian Tara
-
-	
 def menu():
 	os.system("clear")
 	global token
