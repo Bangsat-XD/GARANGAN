@@ -72,7 +72,7 @@ def logo():
                   █░░║║║╠─║─║─║║║║║╠─░░█
                   █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█
                   █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█  
-              \033[1;95m®┏━━━┓╋╋┏┓╋╋╋╋┏━━━┓╋╋╋╋╋╋╋╋╋╋┏┓
+             \033[1;95m®┏━━━┓╋╋┏┓╋╋╋╋┏━━━┓╋╋╋╋╋╋╋╋╋╋┏┓
              ┃┏━┓┃╋╋┃┃╋╋╋╋┃┏━┓┃╋╋╋╋╋╋╋╋╋╋┃┃
              ┃┗━┛┣━━┫┃┏┳━━┫┃╋┃┣┓┏┳━━┳━┓┏━┛┣━━┓  
              \033[1;92m┃┏┓┏┫┏┓┃┗┛┫┏┓┃┗━┛┃┗┛┃┏┓┃┏┓┫┏┓┃┏┓┃
@@ -139,7 +139,7 @@ def menu():
 	print("\033[1;96m[\033[1;93m6\033[1;96m]\033[1;92m─ ® ─\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]")
 	print("\033[1;92m    \033[1;95m──────═• \033[1;92m● \033[1;95m══════════════════════════════ \033[1;92m● \033[1;97m\033[1;95m•═──────")
 	
-	Bilal = raw_input("\033[1;97m[+]\033[1;92m─ ® ─\033[1;97m Option : ")
+	Bilal = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─\033[1;97m Option : ")
 	if Bilal =="":
 		menu()
 	elif Bilal == "1" or Bilal == "01":
@@ -156,7 +156,7 @@ def menu():
 		print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m─ ® ─\033[1;97m Check results RAKA_AMANDA OK")
 		print("\033[1;96m[\033[1;93m2\033[1;96m]\033[1;92m─ ® ─\033[1;97m Check results RAKA_AMANDA CP")
 		print(" ")
-		cek = raw_input("\033[1;97m[+]\033[1;92m─ ® ─\033[1;97m Option : ")
+		cek = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─\033[1;97m Option : ")
 		if cek =="":
 			menu()
 		elif cek == "1":
@@ -257,7 +257,7 @@ def method():
 	print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m─ ® ─ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m]\033[1;92m─ ® ─ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m3\033[1;96m]\033[1;92m─ ® ─ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
-	method = raw_input("[+]\033[1;92m─ ® ─ \033[1;97mOption : ")
+	method = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─ \033[1;97mOption : ")
 	if method == "":
 		menu()
 	elif method == "1":
@@ -291,7 +291,7 @@ def cek_ttl_cp(uid, pw):
 			ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 			month, day, year = ttl.split("/")
 			month = bulan_ttl[month]
-			print("\r\033[0;91m[RAKA_AMANDA] %s|%s|%s %s %s\033[0;91m"%(uid, pw, day, month, year))
+			print("\r\033[0;95m[RAKA_AMANDA] %s|%s|%s %s %s\033[0;91m"%(uid, pw, day, month, year))
 			cp.append("%s|%s"%(uid, pw))
 			open("CP/%s.txt"%(tanggal),"a").write(" + %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
 	except KeyError, IOError:
@@ -385,7 +385,7 @@ def mbasic(user):
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;91m[RAKA_AMANDA] %s|%s\033[0;96m        "%(uid, pw))
+				print("\r\033[0;95m[RAKA_AMANDA] %s|%s\033[0;96m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -439,7 +439,7 @@ def mobile(user):
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;91m[RAKA_AMANDA] %s|%s\033[0;91m        "%(uid, pw))
+				print("\r\033[0;95m[RAKA_AMANDA] %s|%s\033[0;91m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -493,7 +493,7 @@ def manual():
 					break
 					continue
 				elif "checkpoint" in ses.cookies.get_dict().keys():
-					print("\r\033[0;91m[RAKA_AMANDA] %s|%s\033[0;91m        "%(uid, pw))
+					print("\r\033[0;95m[RAKA_AMANDA] %s|%s\033[0;91m        "%(uid, pw))
 					cp.append("%s|%s"%(uid, pw))
 					open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 					break
