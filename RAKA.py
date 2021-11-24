@@ -138,8 +138,6 @@ def menu():
 # Logo (LO GADA OTAK)
 
 	logo()
-	print("\033[1;92mSILAHKAN PILIH SATU-SATU ...!!!")
-	print("\033[1;92m════════════════════════════════════════════════════════")
 	print("\033[1;97m[1]\033[1;92m─ ® ─\033[1;97m Clone from public friends")
 	print("\033[1;97m[2]\033[1;92m─ ® ─\033[1;97m Crack from public followers")
 	print("\033[1;97m[3]\033[1;92m─ ® ─\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
