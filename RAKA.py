@@ -169,7 +169,6 @@ def menu():
 # Logo (LO GADA OTAK)
 	logo()
         print(""+p+"")
-        print(""+p+"[+] Bergabung    : \033[0;97m" +durasi")
         print(""+p+"[+] IP Anda      : "+p+"" +ip")
         print(""+p+"")
         print("[ Hello \033[1;92m"+nama+"\033[0;97m ]")
