@@ -100,14 +100,8 @@ def login():
 		token = open("login.txt", "r")
 		menu()
 	except KeyError, IOError:
-		token = raw_input("\033[1;93m➤\033[1;97m Enter Token : ")
+		token = raw_input("\033[1;93m➤ \033[1;97mEnter Token : ")
 		if token == "":
-	try:
-		cookies = open("login.txt", "r")
-                menu()
-        except KeyError, IOError:
-                cookies = raw_input("\033[1;93➤\033[1;97m Enter Cookies : ")
-                if cookies == "":
 			print("Wrong Input")
 		try:
 			nama = requests.get("https://graph.facebook.com/me?access_token="+token).json()["name"].lower()
