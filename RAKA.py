@@ -265,8 +265,8 @@ def massal():
 def method():
 	print("\033[1;93m➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
 	print("\033[1;97m[1]\033[1;92m─ ® ─ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;97m[2]\033[1;92m─ ® ─ \033[1;97mM-basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;97m[3]\033[1;92m─ ® ─ \033[1;97mFree facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
+	print("\033[1;97m[2]\033[1;92m─ ® ─ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
+	print("\033[1;97m[3]\033[1;92m─ ® ─ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
 	method = raw_input("[+]\033[1;92m─ ® ─ \033[1;97mOption : ")
 	if method == "":
 		menu()
