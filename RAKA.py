@@ -168,8 +168,7 @@ def menu():
 
 # Logo (LO GADA OTAK)
 	logo()
-        print("[ Hello \033[1;92m"+nama+"\033[0;97m ]")
-        print("\033[1;92m"+id+")
+        print("[ HELLO \033[1;92m"+nama+"\033[0;97m]")
 	print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m─ ® ─\033[1;97m Clone from public friends")
 	print("\033[1;96m[\033[1;93m2\033[1;96m]\033[1;92m─ ® ─\033[1;97m Crack from public followers")
 	print("\033[1;96m[\033[1;93m3\033[1;96m]\033[1;92m─ ® ─\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
