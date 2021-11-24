@@ -102,8 +102,8 @@ def login():
 	except KeyError, IOError:
 		token = raw_input("\033[1;93m➤\033[1;97m Enter Token : ")
 		if token == "":
-        try:
-                cookies = open("login.txt", "r")
+	try:
+		cookies = open("login.txt", "r")
                 menu()
         except KeyError, IOError:
                 cookies = raw_input("\033[1;93➤\033[1;97m Enter Cookies : ")
