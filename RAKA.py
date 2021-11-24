@@ -130,12 +130,10 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
         print logo
-        print""+p+"" 
         print"[+] Bergabung : \033[0;97m" +durasi 
         print""+p+"[+] IP Anda : "+p+"" +ip 
-        print""+p+"" 
         print"[ Hello \033[1;92m"+nama+"\033[0;97m ]" 
-        print""+p+""
+
 # Logo (LO GADA OTAK)
 	logo()
 	print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m─ ® ─\033[1;97m Clone from public friends")
