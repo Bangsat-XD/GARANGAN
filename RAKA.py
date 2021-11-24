@@ -100,6 +100,7 @@ def login():
 		token = open("login.txt", "r")
 		menu()
 	except KeyError, IOError:
+		token = raw_input("\033[1;93m➤ \033[1;92m☆ RAKA ☆ ™︻®╤───────═◍➤ : ")
 		token = raw_input("\033[1;93m➤ \033[1;95mEnter Token : ")
 		if token == "":
 			print("Wrong Input")
