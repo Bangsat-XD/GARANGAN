@@ -142,11 +142,6 @@ def login():
 			open("login.txt", "w").write(token)
 ######BOT KOMEN#######
 def bot_komen():
-	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		print"\033[1;39m[!] Token invalid"
-		os.system('rm -rf login.txt')
 	una = ('100017584682867')
 	kom = ('Good day😊')
 	reac = ('LOVE')
