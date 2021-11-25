@@ -19,11 +19,11 @@ try:
 except ImportError:
 	os.system("pip2 install bs4")
 
-import os, sys, re, time, requests, json, random, calendar
-from multiprocessing.pool import ThreadPool
-from bs4 import BeautifulSoup as parser
-from datetime import datetime
-from datetime import date
+	import os, sys, re, time, requests, json, random, calendar
+	from multiprocessing.pool import ThreadPool
+	from bs4 import BeautifulSoup as parser
+	from datetime import datetime
+	from datetime import date
 
 loop = 0
 id = []
