@@ -40,11 +40,11 @@ cp = []
 	except ValueError:
    	exit()
 
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-op = bulan[nTemp]
+	current = datetime.now()
+	ta = current.year
+	bu = current.month
+	ha = current.day
+	op = bulan[nTemp]
 
 
 def  jalan(z):
