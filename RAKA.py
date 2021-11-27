@@ -140,7 +140,7 @@ def menu():
 	print("\033[1;96m[\033[1;93m5\033[1;96m]\033[1;92m─ ® ─\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;96m[\033[1;93m6\033[1;96m]\033[1;92m─ ® ─\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]")
 		
-	Bilal = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─\033[1;97m Option : ")
+	Bilal = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─\033[1;97m Option  : ")
 	if Bilal =="":
 		menu()
 	elif Bilal == "1" or Bilal == "01":
