@@ -11,19 +11,18 @@ import os
 try:
 	import requests
 except ImportError:
-	useragents = ('NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+')
-	ua = 'NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+'
-	uas = 'NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+'
+	os.system("pip2 install requests")
+
 try:
 	import bs4
 except ImportError:
 	os.system("pip2 install bs4")
 
-	import os, sys, re, time, requests, json, random, calendar
-	from multiprocessing.pool import ThreadPool
-	from bs4 import BeautifulSoup as parser
-	from datetime import datetime
-	from datetime import date
+import os, sys, re, time, requests, json, random, calendar
+from multiprocessing.pool import ThreadPool
+from bs4 import BeautifulSoup as parser
+from datetime import datetime
+from datetime import date
 
 loop = 0
 id = []
