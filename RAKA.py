@@ -157,7 +157,7 @@ def menu():
 		print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m─ ® ─\033[1;97m Check results RAKA_AMANDA OK")
 		print("\033[1;96m[\033[1;93m2\033[1;96m]\033[1;92m─ ® ─\033[1;97m Check results RAKA_AMANDA CP")
 		print(" ")
-		cek = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─\033[1;97m Option : ")
+		cek = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─\033[1;97m Option  : ")
 		if cek =="":
 			menu()
 		elif cek == "1":
@@ -258,7 +258,7 @@ def method():
 	print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m─ ® ─ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m]\033[1;92m─ ® ─ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m3\033[1;96m]\033[1;92m─ ® ─ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
-	method = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─ \033[1;97mOption : ")
+	method = raw_input("\033[1;96m[\033[1;93m+\033[1;96m]\033[1;92m─ ® ─ \033[1;97mOption  : ")
 	if method == "":
 		menu()
 	elif method == "1":
