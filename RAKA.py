@@ -29,21 +29,21 @@ id = []
 ok = []
 cp = []
 
-	ct = datetime.now()
-	n = ct.month
-	bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-	try:
-    	if n < 0 or n > 12:
+ct = datetime.now()
+n = ct.month
+bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
+try:
+    if n < 0 or n > 12:
         exit()
-    	nTemp = n - 1
-	except ValueError:
-   	exit()
+    nTemp = n - 1
+except ValueError:
+    exit()
 
-	current = datetime.now()
-	ta = current.year
-	bu = current.month
-	ha = current.day
-	op = bulan[nTemp]
+current = datetime.now()
+ta = current.year
+bu = current.month
+ha = current.day
+op = bulan[nTemp]
 
 
 def  jalan(z):
@@ -51,6 +51,7 @@ def  jalan(z):
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(000.05)
+
 
 my_date = date.today()
 hr = calendar.day_name[my_date.weekday()]
